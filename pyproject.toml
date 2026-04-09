@@ -1,17 +1,23 @@
 [tool.poetry]
-name = "mtd-rollout"
+name = "flask-app"
 version = "0.1.0"
 description = ""
 authors = ["Nelsonh <Humes101@gmail.com>"]
 readme = "README.md"
+packages = [{include = "flask-app"}]
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
 
 [tool.poetry.dependencies]
-python = ">=3.8"
+python = ">=3.14"
 flask = "*"
 flask-admin = "*"
 flask-bootstrap = "*"
 flask-cache = "*"
 flask-flatpages = "*"
+greenlet = "3.3.0"
 flask-gravatar = "*"
 flask-login = "*"
 flask-mail = "*"
@@ -20,9 +26,7 @@ flask-restless = "*"
 flask-themes = "*"
 flask-uploads = "*"
 flask-wtf = "*"
+flask-sqlalchemy = "^3.1.1"
 
-[tool.poetry.group.dev.dependencies]
-
-[build-system]
-requires = ["poetry-core>=2.0.0,<3.0.0"]
-build-backend = "poetry.core.masonry.api"
+[tool.poetry.scripts]
+dev = "flask-app:main"

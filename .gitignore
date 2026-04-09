@@ -1,6 +1,8 @@
 *.py[cod]
 pycache
 
+**/.DS_Store
+
 # C extensions
 *.so
 
