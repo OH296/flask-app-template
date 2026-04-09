@@ -20,7 +20,7 @@ Use this Flask app to initiate your project with less work. In this application 
 
 ## Requirements
 
-Python 3.8.5+, pipenv
+Python 3.13+, pipenv
 
 ## Instalation
 
@@ -42,3 +42,14 @@ To see your application, access this url in your browser:
 	http://localhost:5000
 
 All configuration is in: `configuration.py`
+
+
+
+## Instalation with Poetry
+
+First install Poetry if not donne already
+
+    $ poetry install
+
+    $ poetry run dev 
+
